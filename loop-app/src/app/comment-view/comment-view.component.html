@@ -1,0 +1,24 @@
+<div class="previous-message-card">
+    <div class="prev-sender-container">
+        <div class="previous-sender">David Cunder</div> <div class="time">16:08</div>
+    </div>
+    <div class="prev-adr-container">
+        <div class="previous-addressees">to Tomi Sefman, Anja Skocir</div> <div class="number-of-adr"><div class="inner-number">3</div></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium vero rem esse, 
+        officia natus harum aperiam accusantium omnis porro, dolorum quam nobis perspiciatis reprehenderit 
+        in aliquid dignissimos assumenda. Nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>    
+</div>
+
+<form [formGroup]="myForm">
+    <mat-form-field id="comment-mat-form" appearance="none">
+        <div class='basic-form-container'>
+            <input matInput formControlName="comment" class="comment-input" type="text" placeholder="Add a comment...">
+        </div>
+        <div class="btn-container">
+            <button id="share-btn" type="submit" (click)="submitMessage()">Share</button>
+        </div>
+    </mat-form-field>
+</form>
